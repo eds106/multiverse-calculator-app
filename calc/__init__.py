@@ -1,3 +1,7 @@
+def add_then_multiply(start_number, operation_number):
+    return (start_number + operation_number) * operation_number
+
+
 def add(start_number, operation_number):
     return start_number + operation_number
 
