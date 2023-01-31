@@ -1,5 +1,5 @@
 import sys
-from calc import add, subtract, multiply, divide
+from calc import add, subtract, multiply, divide, add_then_multiply
 
 def get_args():
     try:
@@ -32,6 +32,9 @@ def main():
     elif operation == "divide":
         result = divide(start_number, operation_number)
     
+    elif operation == "add-then-multiply":
+        result = add_then_multiply(start_number, operation_number)
+
     else:
         raise Exception(f"Unsupported or invalid operation '{operation}'")
     
